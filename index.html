@@ -14,10 +14,21 @@
         padding-top: 12rem;
         padding-bottom: 12rem;
       }
+      .moveImage {
+        animation: 10s infinite linear moveCompany;
+      }
+      @keyframes moveCompany {
+        0% {
+          top:0;
+        }
+        100% {
+          top:-50%;
+        }
+      }
     </style>
     <title>Razorpay Clone</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden w-full relative">
 
     <!-- Navbar -->
     <nav class="bg-deepBlue">
@@ -1011,6 +1022,121 @@
               regulatory compliance.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join razorpay section -->
+    <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+      <div class="w-11/12 max-w-[1080px] mx-auto flex flex-row">
+        <!-- left part -->
+        <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+          <h3 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ businesses using Razorpay</h3>
+          <div class="w-6 h-1 bg-greenLight mb-10 my-4"></div>
+          <p class="font-mullish opacity-80">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+          <p class="font-mullish mt-6 opacity-80">Focus on your business while we handle the complexities of payments for you.</p>
+        </div>
+        <!-- right part -->
+        <div class="h-[500px] w-[500px] relative overflow-y-hidden moveImage">
+          <div style="background: linear-gradient(180deg, #f4f8ff, #fff0);"
+          class="absolute w-full h-[150px] top-0 z-50"></div>
+          <img src="./images/comanies.png" alt="companies"
+          class="absolute object-cover ">
+          <div style="background: linear-gradient(0deg, #f4f8ff, #fff0);"
+          class="absolute w-full h-[150px] bottom-0 z-50"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <section>
+      <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+        <img
+          src="./images/feature-section1-dottedrows.png"
+          class="hidden md:block absolute w-[200px] -z-[1] top-[8rem] left-[2rem]"
+        />
+        <h2
+          class="font-mullish font-extrabold text-2xl text-center text-deepBlueHead"
+        >
+          <span>An Experience</span>
+          <br />
+          <span>People Love to Talk About</span>
+        </h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+        <!-- left button -->
+        <button
+          class="w-[36px] h-[36px] md:w-[96px] md:h-[96px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 -translate-y-1/2 grid place-items-center"
+        >
+          <div
+            class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center"
+          >
+            <i
+              data-feather="chevron-left"
+              class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400"
+            ></i>
+          </div>
+        </button>
+        <!-- right button -->
+        <button
+          class="w-[36px] h-[36px] md:w-[96px] md:h-[96px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 -translate-y-1/2 grid place-items-center"
+        >
+          <div
+            class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center"
+          >
+            <i
+              data-feather="chevron-right"
+              class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400"
+            ></i>
+          </div>
+        </button>
+        <div
+          class="max-w-[960px] mx-auto flex flex-col xl:flex-row items-center xl:space-x-[10rem] my-20"
+        >
+          <img
+            src="./images/testimonial.jpg"
+            width="320px"
+            height="320px"
+            loading="lazy"
+            class="object-cover rounded-xl w-[250px] h-[250px] md:w-[320px] md:h-[320px]"
+          />
+          <!-- main content -->
+          <div class="hidden xl:block max-w-[400px]">
+            <img src="./images/quotes.svg" class="w-[35px] h-[40px] -mb-2" />
+            <p class="font-mullish text-3xl font-extralight">
+              Readymade Closed Wallet Solution For Quick Refunds
+            </p>
+            <button class="italic underline text-sm text-grayText">
+              Learn More
+            </button>
+            <p class="font-mullish font-extrabold text-2xl">Lorem Ipsum</p>
+            <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
+            <img
+              src="./images/fake-company-logo.png"
+              width="80"
+              height="40"
+              class="object-cover"
+            />
+          </div>
+        </div>
+        <div class="hidden lg:flex items-start mx-auto w-max space-x-2">
+          <div
+            class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
+          ></div>
+          <div
+            class="w-[10px] h-[10px] bg-lightBlue300 rounded-full cursor-pointer"
+          ></div>
+          <div
+            class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
+          ></div>
+          <div
+            class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
+          ></div>
+          <div
+            class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
+          ></div>
+          <div
+            class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
+          ></div>
         </div>
       </div>
     </section>
